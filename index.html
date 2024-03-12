@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>JS Assignment 08</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <style>
+    html {
+      overflow-x: hidden !important;
+    }
+    body {
+      font-family: cursive;
+      background-color: rgb(255, 214, 138);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.4rem;
+    }
+
+    .container {
+      width: 1000px;
+      height: 100vh;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      align-items: center;
+      gap: 30px;
+    }
+
+    .container button {
+      width: 100%;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      font-family: cursive;
+      border: none;
+      border-radius: 4px;
+      background-color: darkorange;
+      color: #fff;
+      transition: all 0.5s linear;
+    }
+
+    .container button:hover {
+      color: #000;
+      background-color: white;
+      box-shadow: 4px 5px 10px #982f18;
+      cursor: pointer;
+    }
+
+    @media (max-width: 950px) {
+      .container {
+        width: 900px;
+      }
+      .grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    @media (max-width: 850px) {
+      .container {
+        width: 800px;
+      }
+      .grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    @media (max-width: 750px) {
+      .container {
+        width: 700px;
+      }
+      .grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    @media (max-width: 650px) {
+      .container {
+        width: 600px;
+      }
+      .grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    @media (max-width: 550px) {
+      .container {
+        width: 500px;
+      }
+      .grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    @media (max-width: 450px) {
+      .container {
+        width: 400px;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      button {
+        font-size: 1.6rem;
+      }
+      .grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    @media (max-width: 350px) {
+      .container {
+        width: 350px;
+      }
+      h1 {
+        font-size: 1.3rem;
+      }
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 250px) {
+      .container {
+        width: 250px;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>JS Assignment 08</h1>
+      <div class="grid">
+        <button id="task-1">Task 1</button>
+        <button id="task-2">Task 2</button>
+        <button id="task-3">Task 3</button>
+        <button id="task-4">Task 4</button>
+        <button id="task-5">Task 5</button>
+        <button id="task-6">Task 6</button>
+        <button id="task-7">Task 7</button>
+      </div>
+    </div>
+    <script src="script.js "></script>
+  </body>
+</html>
